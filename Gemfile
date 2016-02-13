@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'sdoc', group: :doc
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3'
