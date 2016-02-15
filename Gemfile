@@ -18,6 +18,7 @@ end
 
 group :development do
   gem 'web-console'
+  gem 'rubocop'
 end
 
 group :test do
