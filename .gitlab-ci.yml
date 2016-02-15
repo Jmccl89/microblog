@@ -1,0 +1,6 @@
+test:
+  script:
+    - bundle exec rake test
+rubocop:
+  script:
+    - bundle exec rubocop
