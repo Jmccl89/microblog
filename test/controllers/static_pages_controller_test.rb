@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionController::TestCase
-
   def setup
     @base_title = 'Ruby on Rails Tutorial Sample App'
   end
@@ -9,7 +8,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   test 'should get home' do
     get :home
     assert_response :success
-    assert_select 'title', "#{@base_title}"
+    assert_select 'title', @base_title.to_s
   end
 
   test 'should get help' do
