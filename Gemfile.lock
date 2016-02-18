@@ -215,7 +215,7 @@ DEPENDENCIES
   mini_backtrace
   minitest-reporters
   pg
-  rails
+  rails (~> 4.2.5.1)
   rails_12factor
   rubocop
   sass-rails
