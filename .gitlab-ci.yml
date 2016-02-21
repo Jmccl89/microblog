@@ -1,7 +1,9 @@
 image: ruby:2.3.0
 before_script:
   - gem install bundler --no-ri --no-rdoc
-  - bundle install
+  - mkdir -p /cache/bundle
+  - ls -lAh /cache/bundle
+  - bundle check --path=/cache/bundle || bundle install --path /cache/bundle --without=production,development,deploy,doc
 test:
   script:
     - bundle exec rake test

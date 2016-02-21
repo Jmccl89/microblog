@@ -18,3 +18,5 @@
 
 # Ignore the spring files
 /spring/*.pid
+
+/coverage
