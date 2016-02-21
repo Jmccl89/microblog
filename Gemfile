@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 gem 'rails', '~> 4.2.5.1'
+gem 'bootstrap-sass'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
@@ -28,7 +29,7 @@ group :test do
   gem 'mini_backtrace'
   gem 'guard'
   gem 'guard-minitest'
-  gem 'simplecov', :require => false
+  gem 'simplecov', require: false
 end
 
 group :production do
