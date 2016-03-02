@@ -4,6 +4,7 @@ before_script:
   - mkdir -p /cache/bundle
   - ls -lAh /cache/bundle
   - bundle check --path=/cache/bundle || bundle install --path /cache/bundle --without=production,development,deploy,doc
+  - bundle exec rake db:migrate RAILS_ENV=test
 test:
   script:
     - bundle exec rake test
