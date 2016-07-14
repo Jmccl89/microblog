@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.0'
 
-gem 'rails', '~> 4.2.6'
+gem 'rails', '~> 5.0.0'
 gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'sass-rails'
@@ -18,6 +18,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
   gem 'spring'
+  gem 'rails-controller-testing'
 end
 
 group :development do
